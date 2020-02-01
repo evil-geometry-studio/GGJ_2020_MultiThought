@@ -11,9 +11,12 @@ public class PlayerController : MonoBehaviour
 
     public float Speed;
 
+    public Rigidbody2D rbd2D;
+    Vector2 axisLeftStick;
+
     void Start()
     {
-
+        rbd2D = GetComponent<Rigidbody2D>();
     }
 
     public void SetIDPlayer()
@@ -34,19 +37,16 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        if (Game_Manager.Instance.curState == StateGame.Playing)
+        if (Game_Manager_UI.Instance.curState == StateGame.Playing)
         {
             /*if (GamePad.GetButtonDown(GamePad.Button.A, playerID))
                     {
                         Debug.Log("Player " + playerID + "Presionaste botón A");
                     }*/
 
-            Vector2 axis = GamePad.GetAxis(GamePad.Axis.LeftStick, playerID);
+            axisLeftStick = GamePad.GetAxis(GamePad.Axis.LeftStick, playerID);
 
-            transform.Translate(axis * Speed * Time.deltaTime);
+            transform.Translate(axisLeftStick * Speed * Time.deltaTime);
         }
-
-
-
     }
 }
