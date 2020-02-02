@@ -149,8 +149,9 @@ public class Game_Manager_UI : MonoBehaviour
         int count = 3;
         while (count > 0)
         {
-            yield return new WaitForSeconds(1.3f);
+            
             txtCountBack.text = count.ToString();
+            yield return new WaitForSeconds(1.3f);
             count--;
         }
         yield return new WaitForSeconds(1f);
@@ -188,7 +189,14 @@ public class Game_Manager_UI : MonoBehaviour
         zoomIn = true;
         txtCountBack.gameObject.SetActive(true);
         txtCountBack.text = ""+3;
+        StartCoroutine(WaitAudio());
         StartCoroutine(CountBackToStart());
+    }
+
+    IEnumerator WaitAudio()
+    {
+        yield return new WaitForSeconds(2f);
+        AudioController.Instance.changeTrack(1);
     }
 
     public void MainMenu()

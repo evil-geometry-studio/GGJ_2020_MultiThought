@@ -9,24 +9,37 @@ public class AudioController : MonoBehaviour
 
     public AudioClip[] Tracks;
 
+    AudioSource ctrlAudio;
+
     void Awake() 
     {
         instance = this;
+        ctrlAudio = GetComponent<AudioSource>();
         changeTrack(0);
     }
 
     // Update is called once per frame
     public void changeTrack(int TrackNum)
     {
-        gameObject.GetComponent<AudioSource>().clip = Tracks[TrackNum];
+        ctrlAudio.clip = Tracks[TrackNum];
 
-        if(TrackNum == 0 || TrackNum == 2)
-            gameObject.GetComponent<AudioSource>().loop = true;
+        if(TrackNum == 0 /*|| TrackNum == 2*/)
+            ctrlAudio.loop = true;
         else
-        gameObject.GetComponent<AudioSource>().loop = false;
+        ctrlAudio.loop = false;
 
-        gameObject.GetComponent<AudioSource>().Play();
+        ctrlAudio.Play();
+    }
 
-
+    private void Update() 
+    {
+        if(ctrlAudio.clip == Tracks[2])
+        {
+            if(!ctrlAudio.isPlaying)
+            {
+                ctrlAudio.clip = Tracks[0];
+                ctrlAudio.Play();
+            }
+        }    
     }
 }

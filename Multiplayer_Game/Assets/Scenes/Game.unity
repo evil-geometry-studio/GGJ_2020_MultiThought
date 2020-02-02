@@ -1745,7 +1745,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Art\nKristel Melena Garc\xEDa\nEsteban Engrandes Bribiesca\n\nProgramation\nFernando
     Soria Barcena\nAbraham Garzon Perez\nOmar Pati\xF1o Contreras\nVicente contreras
-    L\xF3pez\n\nAudio\nMiguel\n\nGame Design\nAll"
+    L\xF3pez\n\nAudio\nMiguel trujillo Rangel\n\nGame Design\nAll"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 90bd5ab92b3fdeb44ae9c07ae981826e, type: 2}
   m_sharedMaterial: {fileID: 1992796672850217397, guid: 90bd5ab92b3fdeb44ae9c07ae981826e,
@@ -1815,10 +1815,10 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 588333072}
-    characterCount: 175
+    characterCount: 204
     spriteCount: 0
-    spaceCount: 25
-    wordCount: 23
+    spaceCount: 29
+    wordCount: 27
     linkCount: 0
     lineCount: 16
     pageCount: 1
@@ -4757,17 +4757,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 2064514118}
-        m_MethodName: changeTrack
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
 --- !u!114 &1433012727
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7316,7 +7305,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Tracks:
-  - {fileID: 8300000, guid: 33349d323bc62a54fbb781cf39a4187a, type: 3}
+  - {fileID: 8300000, guid: 47c38d5f0452387458bc2bef290b3dff, type: 3}
   - {fileID: 8300000, guid: 0e516a4798448e14c9d5e046d6181f66, type: 3}
   - {fileID: 8300000, guid: 4648467c8d98bdf4fbebd9bca000eb59, type: 3}
 --- !u!82 &2064514119
@@ -7747,17 +7736,6 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 2064514118}
-        m_MethodName: changeTrack
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
         m_CallState: 2
       - m_Target: {fileID: 1119256635}
         m_MethodName: Play
