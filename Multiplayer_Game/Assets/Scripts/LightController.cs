@@ -67,6 +67,7 @@ public class LightController : MonoBehaviour
             Destroy(this.gameObject, 0f);// Object pooling
             
             Game_Manager.Instance.scoreCount(1);
+            Game_Manager.Instance.scoreBoolLight1 = true;
         }
 
         if (other.CompareTag("Player2"))
@@ -75,6 +76,7 @@ public class LightController : MonoBehaviour
             SpawnLight.Instance.SpawnObjLigth();
             Destroy(this.gameObject, 0f);// Object pooling
             Game_Manager.Instance.scoreCount(2);
+            Game_Manager.Instance.scoreBoolLight2 = true;
 
         }
     }

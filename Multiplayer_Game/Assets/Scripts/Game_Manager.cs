@@ -13,7 +13,7 @@ public class Game_Manager : MonoBehaviour
     public UnityEngine.Experimental.Rendering.LWRP.Light2D lightObj2;
 
     // outter radius (score)
-    private float outerRadiusLimit = 0.01f;
+    private float outerRadiusLimit = 0.0f;
     private float innerRadiusLimit = 10.0f;
 
 
@@ -27,7 +27,8 @@ public class Game_Manager : MonoBehaviour
 
     public int scorePlayer1;
     public int scorePlayer2;
-    public bool scoreLight1;
+    public bool scoreBoolLight1;
+    public bool scoreBoolLight2;
 
     // Start is called before the first frame update
     void Start()
@@ -76,12 +77,63 @@ public class Game_Manager : MonoBehaviour
         }
     }
 
-    public void modifyRadius(){
-        if(){
+    public void modifyRadius()
+    {
+        if (scoreBoolLight1 == true)
+        {
+            outerRadiusLimit++;
+            lightObj1.pointLightOuterRadius = Mathf.Lerp(lightObj1.pointLightOuterRadius, scorePlayer1, 0.01f * Time.time);
 
+            if(lightObj1.pointLightOuterRadius >= scorePlayer1)
+            {
+                scoreBoolLight1 = false;
+            }
+        }
+        else if (scoreBoolLight2 == true)
+        {
+            outerRadiusLimit++;
+            lightObj2.pointLightOuterRadius = Mathf.Lerp(lightObj2.pointLightOuterRadius, scorePlayer2, 0.01f * Time.time);
+
+            if (lightObj2.pointLightOuterRadius >= scorePlayer1)
+            {
+                scoreBoolLight2 = false;
+            }
         }
 
-        outerRadiusLimit++;
-        lightObj1.pointLightOuterRadius = Mathf.Lerp(lightObj1.pointLightOuterRadius, outerRadiusLimit, 0.01f * Time.time);
+    }
+
+    public void Win()
+    {
+        if (scorePlayer1 > scorePlayer2 && TimeBack.Instance.curTime == 0)
+        {
+            TimeBack.Instance.txtWinner.text = "Angel WINS!";
+        }
+        else if (scorePlayer2 > scorePlayer1 && TimeBack.Instance.curTime == 0)
+        {
+            TimeBack.Instance.txtWinner.text = "Devil WINS!";
+        }
+        else
+        {
+            Draw();
+        }
+    }
+
+    void Draw()
+    {
+        if (scorePlayer1 == 10)
+        {
+            TimeBack.Instance.txtWinner.text = "Angel WINS!";
+            TimeBack.Instance.isGameOver();
+        }
+        else if (scorePlayer2 == 10)
+        {
+            TimeBack.Instance.txtWinner.text = "Devil WINS!";
+            TimeBack.Instance.isGameOver();
+        }
+        else if (scorePlayer1 == scorePlayer2 && TimeBack.Instance.curTime == 0)
+        {
+            TimeBack.Instance.txtWinner.text = "It's a DRAW!";
+            TimeBack.Instance.isGameOver();
+        }
     }
 }

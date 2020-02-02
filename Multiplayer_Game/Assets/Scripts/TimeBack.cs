@@ -10,6 +10,7 @@ public class TimeBack : MonoBehaviour
     public static TimeBack Instance { get => instance; }
 
     public TextMeshProUGUI txtTimeBack;
+    public TextMeshProUGUI txtWinner;
 
     public GameObject resultGame;
     public Button btnResult;
@@ -52,13 +53,20 @@ public class TimeBack : MonoBehaviour
 
             if (curTime <= 0)
             {
-                Game_Manager_UI.Instance.curState = StateGame.GameOver;
-                resultGame.SetActive(true);
-                Game_Manager_UI.Instance.SelectUIButton(btnResult);
-                hud.SetActive(false);
-                ctrlAngel.Play("Angel_Move");
-                ctrlDiablo.Play("Angel_Move");
+                Game_Manager.Instance.Win();
+                isGameOver();
             }
         }
+    }
+
+    public void isGameOver() {
+
+        Game_Manager_UI.Instance.curState = StateGame.GameOver;
+        resultGame.SetActive(true);
+        Game_Manager_UI.Instance.SelectUIButton(btnResult);
+        hud.SetActive(false);
+        ctrlAngel.Play("Angel_Move");
+        ctrlDiablo.Play("Angel_Move");
+
     }
 }
