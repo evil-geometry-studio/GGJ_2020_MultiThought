@@ -22,7 +22,10 @@ public class PowerUps : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Game_Manager_UI.Instance.curState != StateGame.Playing)
+        {
+            Destroy(this.gameObject, 0f);
+        }
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {

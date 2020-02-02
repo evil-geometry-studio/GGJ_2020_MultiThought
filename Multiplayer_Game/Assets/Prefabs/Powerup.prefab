@@ -46,7 +46,7 @@ MonoBehaviour:
   m_LightType: 3
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.43858337, g: 0.8584906, b: 0.11743506, a: 1}
   m_Intensity: 0.88
   m_LightVolumeOpacity: 0.28
   m_ApplyToSortingLayers: 00000000
@@ -216,7 +216,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -234,7 +234,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c706e018447804a46ad0a9bf0ed8a12d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PowerType: 0
+  PowerType: 1
   p1: {fileID: 0}
   p2: {fileID: 0}
   reference: {fileID: 0}

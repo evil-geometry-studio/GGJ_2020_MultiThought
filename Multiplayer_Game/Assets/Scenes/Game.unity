@@ -1073,6 +1073,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0e0f4275b6b6cd48b91e4e406662b3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sp: {fileID: 389603705}
   curState: 2
   theUIs:
   - {fileID: 474965718}
@@ -1149,6 +1150,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8570b38aacb807e4eb3448d5f9211765, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameMan: {fileID: 389603702}
   Spanwns:
   - {fileID: 318987639}
   - {fileID: 1065839255}
@@ -1176,7 +1178,7 @@ MonoBehaviour:
   - {fileID: 1110387792}
   - {fileID: 617708731}
   Luz: {fileID: 4109174950765105753, guid: e79a385eb3921f04ca846128f5f2e153, type: 3}
-  Powers: {fileID: 0}
+  Powers: {fileID: 2395408461784061135, guid: 0bb6ae7dfe731574d893d8a9779d7f8f, type: 3}
 --- !u!114 &389603706
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1739,8 +1741,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Art\nKristel Melena Garc\xEDa\nEsteban Engrandes Bribiesca\n\nProgramation\nFernando
-    Soria Barcena\nAbraham\nOmar Pati\xF1o Contreras\nVicente contreras L\xF3pez\n\nAudio\nMiguel\n\nGame
-    Design\nAll"
+    Soria Barcena\nAbraham Garzon Perez\nOmar Pati\xF1o Contreras\nVicente contreras
+    L\xF3pez\n\nAudio\nMiguel\n\nGame Design\nAll"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 90bd5ab92b3fdeb44ae9c07ae981826e, type: 2}
   m_sharedMaterial: {fileID: 1992796672850217397, guid: 90bd5ab92b3fdeb44ae9c07ae981826e,
