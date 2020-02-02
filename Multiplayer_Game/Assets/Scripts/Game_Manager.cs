@@ -8,6 +8,12 @@ public class Game_Manager : MonoBehaviour
     private static Game_Manager instance;
     public static Game_Manager Instance { get => instance;}
 
+    public UnityEngine.Experimental.Rendering.LWRP.Light2D lightObj1;
+    public UnityEngine.Experimental.Rendering.LWRP.Light2D lightObj2;
+
+    private float outerRadiusLimit = 0.01f;
+    private float innerRadiusLimit = 10.0f;
+
 
     [Header("Player positions")]
     public GameObject[] player1Positions;
@@ -24,6 +30,11 @@ public class Game_Manager : MonoBehaviour
     void Start()
     {
         instance = this;
+    }
+
+    void Update(){
+        modifyRadius();
+        
     }
 
     public void SetPlayersConditions()
@@ -58,6 +69,11 @@ public class Game_Manager : MonoBehaviour
         {
             scorePlayer2++;
         }
+    }
+
+    public void modifyRadius(){
+        outerRadiusLimit++;
+        lightObj1.pointLightOuterRadius = Mathf.Lerp(lightObj1.pointLightOuterRadius, outerRadiusLimit, 0.01f * Time.time);
     }
 
 }
