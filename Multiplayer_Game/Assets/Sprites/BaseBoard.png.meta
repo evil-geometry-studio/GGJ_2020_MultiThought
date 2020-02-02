@@ -3,23 +3,26 @@ guid: f03439a93c058ad4785d311e459a098f
 TextureImporter:
   internalIDToNameTable:
   - first:
+      213: -514293171696967239
+    second: BaseBoard_10
+  - first:
+      213: -2547790661398590906
+    second: BaseBoard_27
+  - first:
+      213: 4366871851085371221
+    second: BaseBoard_28
+  - first:
+      213: -6025224303531361376
+    second: BaseBoard_29
+  - first:
+      213: 8954857934846340974
+    second: BaseBoard_30
+  - first:
+      213: 5212385449896150667
+    second: BaseBoard_31
+  - first:
       213: -6032805213811447325
     second: BaseBoard_0
-  - first:
-      213: 3796508828724604786
-    second: BaseBoard_1
-  - first:
-      213: -7375431961631916244
-    second: BaseBoard_2
-  - first:
-      213: 6097635096283626570
-    second: BaseBoard_3
-  - first:
-      213: 7259336713249309683
-    second: BaseBoard_4
-  - first:
-      213: 7146866776398590748
-    second: BaseBoard_5
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -100,29 +103,143 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
+      name: BaseBoard_10
+      rect:
+        serializedVersion: 2
+        x: 6122
+        y: 7295
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1862a9afd966e5e4fbb5306a37dd6e5c
+      internalID: -514293171696967239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BaseBoard_27
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 5380
+        width: 437
+        height: 436
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2b525fe932447f4b933871c52dd588a
+      internalID: -2547790661398590906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BaseBoard_28
+      rect:
+        serializedVersion: 2
+        x: 1749
+        y: 0
+        width: 4507
+        height: 5745
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0a565d7344aa004b8af0c2631d43711
+      internalID: 4366871851085371221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BaseBoard_29
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4524
+        width: 1002
+        height: 638
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e67beec6b9663044bbdf7b3ce55e8832
+      internalID: -6025224303531361376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BaseBoard_30
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 3380
+        width: 435
+        height: 436
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11ab6c7ac9008dc47a8c63f5abb262ec
+      internalID: 8954857934846340974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BaseBoard_31
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 2476
+        width: 1062
+        height: 677
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b32aec42423afb4eac47edaab60e4ad
+      internalID: 5212385449896150667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: BaseBoard_0
       rect:
         serializedVersion: 2
-        x: 2900
-        y: 6475
-        width: 3815
-        height: 1495
+        x: 3540
+        y: 6550
+        width: 3771
+        height: 1420
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,113 +247,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fc1686a8277785c4b8fdfaebe8e35745
+      spriteID: 61274e0631b37e64187da4cc08f15bf5
       internalID: -6032805213811447325
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BaseBoard_1
-      rect:
-        serializedVersion: 2
-        x: 331
-        y: 5178
-        width: 513
-        height: 481
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6572b963455951749919b63c38f9e9f2
-      internalID: 3796508828724604786
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BaseBoard_2
-      rect:
-        serializedVersion: 2
-        x: 38
-        y: 4331
-        width: 982
-        height: 653
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cb635b3f386863740b7857e79b14367a
-      internalID: -7375431961631916244
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BaseBoard_3
-      rect:
-        serializedVersion: 2
-        x: 5814
-        y: 5308
-        width: 438
-        height: 471
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 034e7a9fe73229b46896f744542964f5
-      internalID: 6097635096283626570
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BaseBoard_4
-      rect:
-        serializedVersion: 2
-        x: 5566
-        y: 4409
-        width: 1071
-        height: 695
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 77bb482ed6683fd41a562608c01fea45
-      internalID: 7259336713249309683
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BaseBoard_5
-      rect:
-        serializedVersion: 2
-        x: 1188
-        y: 0
-        width: 4397
-        height: 5771
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 78e1c94b1b8a5e74482df98c0f4b1540
-      internalID: 7146866776398590748
       vertices: []
       indices: 
       edges: []
