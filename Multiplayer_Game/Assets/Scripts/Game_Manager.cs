@@ -75,7 +75,6 @@ public class Game_Manager : MonoBehaviour
         outerRadiusLimit++;
         lightObj1.pointLightOuterRadius = Mathf.Lerp(lightObj1.pointLightOuterRadius, outerRadiusLimit, 0.01f * Time.time);
     }
-
 }
 
 /*  private void OnTriggerEnter2D(Collider2D other)
