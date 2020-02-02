@@ -148,7 +148,7 @@ public class Game_Manager_UI : MonoBehaviour
         int count = 3;
         while (count > 0)
         {
-            yield return new WaitForSeconds(1f);
+            yield return new WaitForSeconds(1.3f);
             txtCountBack.text = count.ToString();
             count--;
         }
@@ -178,9 +178,14 @@ public class Game_Manager_UI : MonoBehaviour
 
     public void StartGame()
     {
+        thePlayers[0].playerID = GamePad.Index.One;
+        thePlayers[1].playerID = GamePad.Index.Two;
+
         curState = StateGame.StartPlaying;
         SelectUIButton(btnsSideSelection[0]);
         zoomIn = true;
+        txtCountBack.gameObject.SetActive(true);
+        txtCountBack.text = ""+3;
         StartCoroutine(CountBackToStart());
     }
 
@@ -193,5 +198,10 @@ public class Game_Manager_UI : MonoBehaviour
     public void ExitGame()
     {
         Application.Quit();
+    }
+
+    public void ChangeZoom()
+    {
+        zoomOut = true;
     }
 }

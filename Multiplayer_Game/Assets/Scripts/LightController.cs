@@ -16,27 +16,40 @@ public class LightController : MonoBehaviour
 
     public bool iman = false;
 
+    AudioSource ctrlAudio;
+
     // Start is called before the first frame update
     void Start()
     {
-
+        ctrlAudio = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (nextCount < Time.time)
-        {
-            curPosition = SpawnLight.Instance.RandPositionWayPoint();
-            nextCount = Time.time + rateCount;
 
-            if (iman)
+        if (Game_Manager_UI.Instance.curState == StateGame.Playing)
+        {
+            if (nextCount < Time.time)
             {
-                StartCoroutine("MetodoIman");
+                curPosition = SpawnLight.Instance.RandPositionWayPoint();
+                nextCount = Time.time + rateCount;
+
+                if (iman)
+                {
+                    StartCoroutine("MetodoIman");
+                }
+                ctrlAudio.Play();
             }
+
+            transform.position = Vector2.MoveTowards(this.transform.position, curPosition, speed * Time.deltaTime);
+            
+        }
+        else
+        {
+            Destroy(this.gameObject, 0f);
         }
 
-        transform.position = Vector2.MoveTowards(this.transform.position, curPosition, speed * Time.deltaTime);
     }
 
     IEnumerator MetodoIman()

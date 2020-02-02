@@ -42,6 +42,7 @@ public class Game_Manager : MonoBehaviour
         SetRandPositionPlayer1();
         SetRandPositionPlayer2();
         SpawnLight.Instance.SpawnObjLigth();
+        TimeBack.Instance.SetTime();
     }
 
     public void SetRandPositionPlayer1()
