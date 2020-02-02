@@ -67,6 +67,6 @@ public class TimeBack : MonoBehaviour
         hud.SetActive(false);
         ctrlAngel.Play("Angel_Move");
         ctrlDiablo.Play("Angel_Move");
-
+        
     }
 }

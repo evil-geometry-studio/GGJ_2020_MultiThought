@@ -9,15 +9,10 @@ public class PlayerController : MonoBehaviour
     public int indexPlayerID;
     public GamePad.Index playerID;
 
+    public float maxSpeed = 8;
     public float Speed;
 
-    public Rigidbody2D rbd2D;
     Vector2 axisLeftStick;
-
-    void Start()
-    {
-        rbd2D = GetComponent<Rigidbody2D>();
-    }
 
     public void SetIDPlayer()
     {

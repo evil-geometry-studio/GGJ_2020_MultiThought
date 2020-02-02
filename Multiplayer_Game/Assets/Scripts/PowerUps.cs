@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PowerUps : MonoBehaviour
 {
-    public enum TypePowerUp {PVel, Iman};
+    public enum TypePowerUp { PVel, Iman };
     public TypePowerUp PowerType;
 
     public PlayerController p1, p2;
@@ -29,15 +29,21 @@ public class PowerUps : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.CompareTag("Player1") && PowerType == TypePowerUp.PVel)
+        if (collision.gameObject.CompareTag("Player1") && PowerType == TypePowerUp.PVel)
         {
-            StartCoroutine("Velocidad1");
+            StopAllCoroutines();
+            p1.Speed = p1.maxSpeed;
+            p2.Speed = p2.maxSpeed;
+            StartCoroutine(Velocidad1());
             Destroy(gameObject);
         }
 
-        if(collision.gameObject.CompareTag("Player2") && PowerType == TypePowerUp.PVel)
+        if (collision.gameObject.CompareTag("Player2") && PowerType == TypePowerUp.PVel)
         {
-            StartCoroutine("Velocidad2");
+            StopAllCoroutines();
+            p1.Speed = p1.maxSpeed;
+            p2.Speed = p2.maxSpeed;
+            StartCoroutine(Velocidad2());
             Destroy(gameObject);
         }
 
@@ -66,18 +72,16 @@ public class PowerUps : MonoBehaviour
     }
     IEnumerator Velocidad1()
     {
-        p1.Speed += 3;
-        p2.Speed -= 3f;
-        yield return new WaitForSeconds(1.5f);
-        p1.Speed -= 3f;
-        p2.Speed += 3f;
+        p2.Speed  = 6f;
+        yield return new WaitForSeconds(1f);
+        p1.Speed = p1.maxSpeed;
+        p2.Speed = p2.maxSpeed;
     }
     IEnumerator Velocidad2()
     {
-        p1.Speed -= 3f;
-        p2.Speed += 3f;
-        yield return new WaitForSeconds(1.5f);
-        p1.Speed += 3f;
-        p2.Speed -= 3f;
+        p1.Speed = 6f;
+        yield return new WaitForSeconds(1f);
+        p1.Speed = p1.maxSpeed;
+        p2.Speed = p2.maxSpeed;
     }
 }

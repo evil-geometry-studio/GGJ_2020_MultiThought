@@ -8,6 +8,7 @@ TagManager:
   - Player1
   - Player2
   - Power
+  - Eyes
   layers:
   - Default
   - TransparentFX
@@ -17,7 +18,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - Eyes
   - 
   - 
   - 
