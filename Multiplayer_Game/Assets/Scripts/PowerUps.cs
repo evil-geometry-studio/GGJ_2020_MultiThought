@@ -28,14 +28,14 @@ public class PowerUps : MonoBehaviour
     {
         if(collision.gameObject.CompareTag("Player1") && PowerType == TypePowerUp.PVel)
         {
-            Debug.Log("Entre1");
             StartCoroutine("Velocidad1");
+            Destroy(gameObject);
         }
 
         if(collision.gameObject.CompareTag("Player2") && PowerType == TypePowerUp.PVel)
         {
             StartCoroutine("Velocidad2");
-            Debug.Log("Entre2");
+            Destroy(gameObject);
         }
 
         if (collision.gameObject.CompareTag("Player1") && PowerType == TypePowerUp.Iman)
@@ -52,10 +52,13 @@ public class PowerUps : MonoBehaviour
         {
             if (reference != null)
             {
+
                 reference.iman = true;
                 reference.playerPosition = p2.gameObject.transform.position;
                 Debug.Log("Entre4");
             }
+
+            Destroy(gameObject);
         }
     }
     IEnumerator Velocidad1()

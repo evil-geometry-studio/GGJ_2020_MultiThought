@@ -7,6 +7,7 @@ public class SpawnLight : MonoBehaviour
 
     private static SpawnLight instance;
     public static SpawnLight Instance { get => instance;}
+    public Game_Manager_UI gameMan;
     // Start is called before the first frame update
     public GameObject[] Spanwns;
     public GameObject Luz;
@@ -18,7 +19,6 @@ public class SpawnLight : MonoBehaviour
     void Start()
     {
         instance = this;
-        StartCoroutine("Spawn");
     }
 
     public void SpawnPower()
@@ -33,6 +33,11 @@ public class SpawnLight : MonoBehaviour
             Powers.GetComponent<PowerUps>().PowerType = PowerUps.TypePowerUp.Iman;
         }
         Instantiate(Powers, RandPositionWayPoint(), Quaternion.identity);
+        timing += 5;
+        if(timing >= 5 && timing <= 20)
+        {
+            StartCoroutine("Spawn");
+        }
     }
 
     public void SpawnObjLigth()
@@ -46,9 +51,12 @@ public class SpawnLight : MonoBehaviour
         return Spanwns[rand].transform.position;
 
     }
-    IEnumerator Spawn()
+    public IEnumerator Spawn()
     {
-        if()
+        if (Game_Manager_UI.Instance.curState == StateGame.Playing)
+        {
+            yield return new WaitForSeconds(5f);
+            SpawnPower();
+        }
     }
-
 }

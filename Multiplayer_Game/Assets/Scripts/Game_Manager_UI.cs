@@ -18,6 +18,7 @@ public class Game_Manager_UI : MonoBehaviour
     private static Game_Manager_UI instance;
     public static Game_Manager_UI Instance { get => instance; }
 
+    public SpawnLight sp;
 
     [Header("Game State")]
     public StateGame curState;
@@ -155,6 +156,7 @@ public class Game_Manager_UI : MonoBehaviour
         yield return new WaitForSeconds(1f);
         Game_Manager.Instance.SetPlayersConditions();
         curState = StateGame.Playing;
+        sp.StartCoroutine("Spawn");
         txtCountBack.gameObject.SetActive(false);
     }
 
