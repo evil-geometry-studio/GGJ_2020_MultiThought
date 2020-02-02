@@ -164,7 +164,7 @@ GameObject:
   - component: {fileID: 7739555202570122776}
   m_Layer: 0
   m_Name: Powerup
-  m_TagString: Ligth
+  m_TagString: Power
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -234,8 +234,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c706e018447804a46ad0a9bf0ed8a12d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PVel: {fileID: 0}
-  Iman: {fileID: 0}
+  PowerType: 0
   p1: {fileID: 0}
   p2: {fileID: 0}
   reference: {fileID: 0}

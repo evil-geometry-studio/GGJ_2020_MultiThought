@@ -575,6 +575,7 @@ MonoBehaviour:
   - {fileID: 1110387792}
   - {fileID: 617708731}
   Luz: {fileID: 4109174950765105753, guid: e79a385eb3921f04ca846128f5f2e153, type: 3}
+  Powers: {fileID: 0}
 --- !u!1 &447534104
 GameObject:
   m_ObjectHideFlags: 0
@@ -966,6 +967,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Powerup
       objectReference: {fileID: 0}
+    - target: {fileID: 2395408461784061135, guid: 0bb6ae7dfe731574d893d8a9779d7f8f,
+        type: 3}
+      propertyPath: m_TagString
+      value: Power
+      objectReference: {fileID: 0}
     - target: {fileID: 2395408461784061132, guid: 0bb6ae7dfe731574d893d8a9779d7f8f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1020,6 +1026,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2395408461784061133, guid: 0bb6ae7dfe731574d893d8a9779d7f8f,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7739555202570122776, guid: 0bb6ae7dfe731574d893d8a9779d7f8f,
+        type: 3}
+      propertyPath: PowerType
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0bb6ae7dfe731574d893d8a9779d7f8f, type: 3}
