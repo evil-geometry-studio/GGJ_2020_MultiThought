@@ -100,18 +100,6 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -119,10 +107,10 @@ TextureImporter:
       name: animacion1gamejam_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 2114
-        height: 2513
+        x: 5
+        y: 3358
+        width: 2093
+        height: 2452
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,7 +118,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eb0d539710b93f240861cab874ecf065
+      spriteID: 08a0c65eb7bf3e449ac0a8c3749de220
       internalID: -1038095736641214716
       vertices: []
       indices: 
@@ -140,10 +128,10 @@ TextureImporter:
       name: animacion1gamejam_1
       rect:
         serializedVersion: 2
-        x: 2447
-        y: 46
-        width: 2093
-        height: 2474
+        x: 2435
+        y: 3703
+        width: 2045
+        height: 2526
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -151,7 +139,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a18a3594836dce6418ae08f1eeefafc4
+      spriteID: 35053cc5542eb764f9cfefc0b5ad5193
       internalID: 7525587397988440648
       vertices: []
       indices: 
@@ -161,10 +149,10 @@ TextureImporter:
       name: animacion1gamejam_2
       rect:
         serializedVersion: 2
-        x: 6882
-        y: 3629
-        width: 1990
-        height: 2527
+        x: 4598
+        y: 3431
+        width: 2097
+        height: 2449
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -172,7 +160,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0cf67645a61ae2e4594222b2f47bec1b
+      spriteID: fa45c36bbc4b09843b8c6410982c18ef
       internalID: 9213397017103186374
       vertices: []
       indices: 
@@ -182,10 +170,10 @@ TextureImporter:
       name: animacion1gamejam_3
       rect:
         serializedVersion: 2
-        x: 4595
-        y: 3338
-        width: 2045
-        height: 2818
+        x: 6880
+        y: 3699
+        width: 2066
+        height: 2517
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -193,7 +181,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c26201eff8fa6c540b000314e8018264
+      spriteID: bb4ca78c3a0ba924991615ca0c9a4f47
       internalID: 8053262701063159738
       vertices: []
       indices: 
@@ -203,10 +191,10 @@ TextureImporter:
       name: animacion1gamejam_4
       rect:
         serializedVersion: 2
-        x: 2419
-        y: 3407
-        width: 2017
-        height: 2749
+        x: 31
+        y: 17
+        width: 2093
+        height: 2448
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -214,7 +202,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2f82e9e067dd90047bd0f6bd5353b683
+      spriteID: 94949aa4a428714448bf025d89017776
       internalID: -577820427067131096
       vertices: []
       indices: 
@@ -224,10 +212,10 @@ TextureImporter:
       name: animacion1gamejam_5
       rect:
         serializedVersion: 2
-        x: 0
-        y: 3289
-        width: 2087
-        height: 2571
+        x: 2513
+        y: 5
+        width: 2093
+        height: 2487
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -235,7 +223,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 326b855424ebf194e8a594475d310d95
+      spriteID: b4d4687add14e6949a9eb59eddb246b6
       internalID: -8398772562983893660
       vertices: []
       indices: 
