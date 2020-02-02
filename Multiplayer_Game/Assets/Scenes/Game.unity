@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -1124,8 +1124,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fce1640add0d1074b8f7d6a30f377d1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lightObj1: {fileID: 0}
-  lightObj2: {fileID: 0}
+  lightObj1: {fileID: 1841156717}
+  lightObj2: {fileID: 153571721}
   player1Positions:
   - {fileID: 1419828618}
   - {fileID: 777495324}
@@ -1138,6 +1138,8 @@ MonoBehaviour:
   player2Obj: {fileID: 2087080679}
   scorePlayer1: 0
   scorePlayer2: 0
+  scoreBoolLight1: 0
+  scoreBoolLight2: 0
 --- !u!114 &389603705
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1192,6 +1194,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   txtTimeBack: {fileID: 1538680276}
+  txtWinner: {fileID: 1043153621}
   resultGame: {fileID: 1119256630}
   btnResult: {fileID: 2112065159}
   hud: {fileID: 1642326801}
