@@ -1,25 +1,22 @@
 fileFormatVersion: 2
-guid: 3cab086fe9136a44cad4f43df759be22
+guid: 0952edd3b77fe544db299f8b0a4b352d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1038095736641214716
-    second: animacion1gamejam_0
+      213: -462442523553886101
+    second: animacion3gamejam_0
   - first:
-      213: 7525587397988440648
-    second: animacion1gamejam_1
+      213: 8388324207762079550
+    second: animacion3gamejam_1
   - first:
-      213: 9213397017103186374
-    second: animacion1gamejam_2
+      213: -1403595585516320960
+    second: animacion3gamejam_2
   - first:
-      213: 8053262701063159738
-    second: animacion1gamejam_3
+      213: -8039618350244869728
+    second: Diablo_Angry
   - first:
-      213: -577820427067131096
-    second: Angel_Angry_Player
-  - first:
-      213: -8398772562983893660
-    second: Angel_HappyPlayer
+      213: 7673783874495268110
+    second: Diablo_Happy
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -104,13 +101,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: animacion1gamejam_0
+      name: animacion3gamejam_0
       rect:
         serializedVersion: 2
-        x: 5
-        y: 3358
-        width: 2093
-        height: 2452
+        x: 0
+        y: 1841
+        width: 1179
+        height: 1571
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,20 +115,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 08a0c65eb7bf3e449ac0a8c3749de220
-      internalID: -1038095736641214716
+      spriteID: 7d1a5643a9ed52a4f8e531008b564406
+      internalID: -462442523553886101
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: animacion1gamejam_1
+      name: animacion3gamejam_1
       rect:
         serializedVersion: 2
-        x: 2435
-        y: 3703
-        width: 2045
-        height: 2526
+        x: 1443
+        y: 1873
+        width: 1163
+        height: 1542
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -139,20 +136,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 35053cc5542eb764f9cfefc0b5ad5193
-      internalID: 7525587397988440648
+      spriteID: 89e15c857817b2344bec163617a1a418
+      internalID: 8388324207762079550
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: animacion1gamejam_2
+      name: animacion3gamejam_2
       rect:
         serializedVersion: 2
-        x: 4598
-        y: 3431
-        width: 2097
-        height: 2449
+        x: 2927
+        y: 1857
+        width: 1135
+        height: 1517
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -160,20 +157,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fa45c36bbc4b09843b8c6410982c18ef
-      internalID: 9213397017103186374
+      spriteID: b1d2c36e16bb6f840b7638a853285a87
+      internalID: -1403595585516320960
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: animacion1gamejam_3
+      name: Diablo_Angry
       rect:
         serializedVersion: 2
-        x: 6880
-        y: 3699
-        width: 2066
-        height: 2517
+        x: 616
+        y: 0
+        width: 1136
+        height: 1540
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,20 +178,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bb4ca78c3a0ba924991615ca0c9a4f47
-      internalID: 8053262701063159738
+      spriteID: e766a87ad669c364e8498bd86ff4dd65
+      internalID: -8039618350244869728
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Angel_Angry_Player
+      name: Diablo_Happy
       rect:
         serializedVersion: 2
-        x: 31
-        y: 17
-        width: 2093
-        height: 2448
+        x: 2131
+        y: 0
+        width: 1145
+        height: 1514
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -202,29 +199,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 94949aa4a428714448bf025d89017776
-      internalID: -577820427067131096
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Angel_HappyPlayer
-      rect:
-        serializedVersion: 2
-        x: 2513
-        y: 5
-        width: 2093
-        height: 2487
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b4d4687add14e6949a9eb59eddb246b6
-      internalID: -8398772562983893660
+      spriteID: c70ab4daf1900ad4195f46fdbd2b696d
+      internalID: 7673783874495268110
       vertices: []
       indices: 
       edges: []

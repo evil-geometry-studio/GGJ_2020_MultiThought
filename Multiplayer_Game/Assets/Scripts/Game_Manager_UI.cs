@@ -51,6 +51,8 @@ public class Game_Manager_UI : MonoBehaviour
     void Start()
     {
         instance = this;
+
+        SelectUIButton(btnsUI[0]);
     }
 
     void Update() 
@@ -74,6 +76,11 @@ public class Game_Manager_UI : MonoBehaviour
                 zoomOut=false;
                 mainCamera.orthographicSize= 20f;
             }
+    }
+
+    public void ShowCredits()
+    {
+        SelectUIButton(btnsUI[1]);
     }
 
     public void SelectSide(int indexBtn)
