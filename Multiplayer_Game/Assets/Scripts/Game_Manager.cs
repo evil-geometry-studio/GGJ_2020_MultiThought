@@ -8,9 +8,11 @@ public class Game_Manager : MonoBehaviour
     private static Game_Manager instance;
     public static Game_Manager Instance { get => instance;}
 
+    [Header("light objects < score >")]
     public UnityEngine.Experimental.Rendering.LWRP.Light2D lightObj1;
     public UnityEngine.Experimental.Rendering.LWRP.Light2D lightObj2;
 
+    // outter radius (score)
     private float outerRadiusLimit = 0.01f;
     private float innerRadiusLimit = 10.0f;
 
@@ -25,6 +27,7 @@ public class Game_Manager : MonoBehaviour
 
     public int scorePlayer1;
     public int scorePlayer2;
+    public bool scoreLight1;
 
     // Start is called before the first frame update
     void Start()
@@ -33,7 +36,8 @@ public class Game_Manager : MonoBehaviour
     }
 
     void Update(){
-        //modifyRadius();
+        
+        modifyRadius();
         
     }
 
@@ -73,28 +77,11 @@ public class Game_Manager : MonoBehaviour
     }
 
     public void modifyRadius(){
+        if(){
+
+        }
+
         outerRadiusLimit++;
         lightObj1.pointLightOuterRadius = Mathf.Lerp(lightObj1.pointLightOuterRadius, outerRadiusLimit, 0.01f * Time.time);
     }
 }
-
-/*  private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.CompareTag("Player1"))
-        {
-            Debug.Log("Player 1 Colision");
-            SpawnLight.Instance.SpawnObjLigth();
-            Destroy(this.gameObject, 0f);// Object pooling
-            
-            Game_Manager.Instance.scoreCount(1);
-        }
-
-        if (other.CompareTag("Player2"))
-        {
-            Debug.Log("Player 2 Colision");
-            SpawnLight.Instance.SpawnObjLigth();
-            Destroy(this.gameObject, 0f);// Object pooling
-            Game_Manager.Instance.scoreCount(2);
-
-        }
-    }*/

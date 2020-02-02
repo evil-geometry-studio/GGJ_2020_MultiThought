@@ -60,12 +60,21 @@ public class LightController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player1") || other.CompareTag("Player2"))
+        if (other.CompareTag("Player1"))
         {
-            Debug.Log("Colisiono");
+            Debug.Log("Player 1 Colision");
             SpawnLight.Instance.SpawnObjLigth();
             Destroy(this.gameObject, 0f);// Object pooling
-            //Mandar puntuación
+            
+            Game_Manager.Instance.scoreCount(1);
+        }
+
+        if (other.CompareTag("Player2"))
+        {
+            Debug.Log("Player 2 Colision");
+            SpawnLight.Instance.SpawnObjLigth();
+            Destroy(this.gameObject, 0f);// Object pooling
+            Game_Manager.Instance.scoreCount(2);
 
         }
     }
