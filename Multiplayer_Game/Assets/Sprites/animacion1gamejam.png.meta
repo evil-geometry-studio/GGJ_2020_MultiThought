@@ -16,10 +16,10 @@ TextureImporter:
     second: animacion1gamejam_3
   - first:
       213: -577820427067131096
-    second: animacion1gamejam_4
+    second: Angel_Angry_Player
   - first:
       213: -8398772562983893660
-    second: animacion1gamejam_5
+    second: Angel_HappyPlayer
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -112,7 +112,7 @@ TextureImporter:
         width: 2093
         height: 2452
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -133,7 +133,7 @@ TextureImporter:
         width: 2045
         height: 2526
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -154,7 +154,7 @@ TextureImporter:
         width: 2097
         height: 2449
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -175,7 +175,7 @@ TextureImporter:
         width: 2066
         height: 2517
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -188,7 +188,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: animacion1gamejam_4
+      name: Angel_Angry_Player
       rect:
         serializedVersion: 2
         x: 31
@@ -196,7 +196,7 @@ TextureImporter:
         width: 2093
         height: 2448
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -209,7 +209,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: animacion1gamejam_5
+      name: Angel_HappyPlayer
       rect:
         serializedVersion: 2
         x: 2513
@@ -217,7 +217,7 @@ TextureImporter:
         width: 2093
         height: 2487
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
